@@ -245,18 +245,11 @@ $(function() {
     });
 
     SetRatingStar();
-    
-    
+      
+});
 
 
-
-
-
-
-
-
-
-
+// rigster form
     
 });
 
