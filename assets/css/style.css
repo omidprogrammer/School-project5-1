@@ -486,10 +486,12 @@ text-align: center;
   position: relative; }
   @media only screen and (min-width: 1400px) {
     .single-slider {
-      padding: 0 100px; } }
+      padding: 0 100px; 
+    text-align: center;} }
   @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .single-slider {
-      padding: 0 30px; } }
+      padding: 0 30px;
+      text-align: center; } }
   .single-slider .slider-bg {
     border-radius: 40px;
     background: linear-gradient(145deg, #e6e1dd, #ffffff);
@@ -546,9 +548,27 @@ text-align: center;
       max-width:20%;
      margin-right: 380px;
     }
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .single-slider .slider-product-content img{
+        display:none;
+      } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-slider .slider-product-content img{
+        display:none;
+     } }
+    @media (max-width: 767px) {
+      .single-slider .slider-product-content img{
+        display:none;
+     } }
+
+
+
+
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .single-slider .slider-product-content {
-        margin-left: 100px; } }
+        margin-left: 100px; 
+      } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .single-slider .slider-product-content {
         margin-left: 70px; } }
@@ -1299,11 +1319,17 @@ direction: rtl;
 .register_form{
   direction: rtl;
   text-align: right;
+  border-radius: 50px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  30px 30px 60px #bebebe,
+             -30px -30px 60px #ffffff;
+             margin-top: 80px;
+             padding-right: 40px;
 }
 
 .register_form .nav-link{
   padding: .5rem 5rem;
-  color: #777
+  color: rgb(63, 62, 62)
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
@@ -1319,7 +1345,13 @@ direction: rtl;
   list-style: circle;
 }
 
+.nav-pills .nav-item i{
+  padding-right: 10px;
+}
 
+.tab-pane{
+   color:#010101;
+}
 /*===========================
        11.CONTACT css 
 ===========================*/
@@ -1731,7 +1763,7 @@ text-align: right;
     flex-basis: auto;
     -ms-flex-positive: 0;
     flex-grow: 0;
-    text-align: left;
+    text-align: right;
     width: auto; } }
 .shop-reviews .nav .nav-item a {
   font-size: 18px;
@@ -1929,10 +1961,23 @@ color: #EA4436;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  max-width: 100%;
 
 }
 
-
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .mapContainer iframe {
+    margin-top: 20px;
+    max-width: 100%;
+  } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mapContainer iframe{
+    max-width: 100%; 
+    margin-top: 20px;} }
+@media (max-width: 767px) {
+  .mapContainer iframe{
+    max-width: 100%;   
+    margin-top: 20px;} }
 
 
 
