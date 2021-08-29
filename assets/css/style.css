@@ -37,8 +37,10 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #777; 
-  scroll-behavior: smooth;
   /* direction: rtl; */
+}
+html{
+  scroll-behavior: smooth;
 }
 ::selection{
   background-color:rgba(254, 120, 101, 0.9);

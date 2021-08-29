@@ -251,6 +251,6 @@ $(function() {
 
 // rigster form
     
-});
+
 
 
