@@ -527,7 +527,7 @@ text-align: center;
         margin-left: 0;
         padding: 40px 15px 50px; } }
     .single-slider .slider-product-content .slider-title {
-      font-size: 50px !important;  
+      font-size: 40px !important;  
       z-index: 1; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .single-slider .slider-product-content .slider-title {
@@ -1307,9 +1307,11 @@ direction: rtl;
       font-size: 20px;
       color: #fe7865;
     direction: rtl;
+    text-align: right;
     }
   .single-info .info-content {
     padding-left: 20px; 
+    
 
   }
     .single-info .info-content p {
