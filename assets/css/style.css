@@ -493,13 +493,13 @@ text-align: center;
       padding: 0 30px;
       text-align: right; } }
   .single-slider .slider-bg {
-    border-radius: 40px;
+    border-radius: 20px;
     background: linear-gradient(145deg, #e6e1dd, #ffffff);
     box-shadow:  5px 5px 10px #f5f0ec,                 -5px -5px 10px #ffffff;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
   .single-slider .slider-product-image img {
@@ -1319,12 +1319,15 @@ direction: rtl;
 .register_form{
   direction: rtl;
   text-align: right;
-  border-radius: 50px;
-background: linear-gradient(145deg, #cacaca, #f0f0f0);
-box-shadow:  30px 30px 60px #bebebe,
-             -30px -30px 60px #ffffff;
-             margin-top: 80px;
-             padding-right: 40px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  30px 30px 60px #bebebe,             -30px -30px 60px #ffffff;
+  margin-top: 80px;
+  padding-right: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .register_form .nav-link{
