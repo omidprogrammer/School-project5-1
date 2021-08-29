@@ -37,6 +37,7 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #777; 
+  scroll-behavior: smooth;
   /* direction: rtl; */
 }
 ::selection{
@@ -194,11 +195,22 @@ p {
 /*===== All Preloader Title Style =====*/
 .preloader::before{
   content:url(../images/black-logo.png);
-    top: 33%;
+    /* top: 50%; */
+    margin-top: 400px;
+    margin-left:-50px;
+    position: fixed;
+    z-index: 99;
 
 }
+.preloader h2{
+  color: #777;
+  margin-top: 200px;
+  margin-left: -90px;
+  font-size: 23px;
+  
+}
 .preloader {
-
+text-align: center;
   /* Body Overlay */
   position: fixed;
   top: 0;
@@ -499,6 +511,11 @@ p {
     direction:rtl;
     max-width: 670px;
     margin-left: 125px; }
+    .slider-product-content img{
+      position: relative;
+      max-width:20%;
+     margin-right: 380px;
+    }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .single-slider .slider-product-content {
         margin-left: 100px; } }
@@ -683,7 +700,7 @@ p {
         font-size: 10px;
         margin-left: 5px; }
       .single-discount-product .product-content a:hover {
-        color: #fe7865; }
+        color: #f7d4cf; }
   .single-discount-product:hover .product-image img {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -758,7 +775,7 @@ p {
   .single-product-items .product-item-image .product-discount-tag {
     width: 70px;
     height: 70px;
-    background-color: #fe7865;
+    background-color: #f39184;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -890,11 +907,20 @@ p {
      6.SERVICES css 
 ===========================*/
 .services-area {
+  text-align: center;
   border-radius: 39px;
   background: linear-gradient(145deg, #e6e1dd, #ffffff);
   box-shadow:  17px 17px 34px #f0ebe7,
                -17px -17px 34px #ffffff;
 direction: rtl;
+}
+
+.services img{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
   @media (max-width: 767px) {
     .services-area {
@@ -929,7 +955,11 @@ direction: rtl;
     padding-bottom: 80px; } }
 
 .showcase-title .title {
-  font-size: 35px; }
+  font-size: 35px; 
+}
+.showcase-title h2{
+  text-align: center;
+}
   @media (max-width: 767px) {
     .showcase-title .title {
       font-size: 30px; } }
@@ -1030,7 +1060,14 @@ direction: rtl;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s; }
   .single-temp .team-image img {
-    border-radius: 50%; }
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
   .single-temp .team-content .title a {
     font-size: 20px;
     color: #333;
@@ -1228,7 +1265,7 @@ direction: rtl;
        11.CONTACT css 
 ===========================*/
 .contact-area .contact-title .title {
-  font-size: 60px;
+  font-size: 40px;
   color: #333; }
   @media (max-width: 767px) {
     .contact-area .contact-title .title {
@@ -1255,7 +1292,7 @@ direction: rtl;
       padding: 0 20px  20px; } }
 
 .contact-info .info-title {
-  font-size: 26px;
+  font-size: 20px;
   padding-bottom: 5px; 
 }
 
@@ -1268,7 +1305,9 @@ direction: rtl;
     top: 0; }
     .single-info .info-icon i {
       font-size: 20px;
-      color: #fe7865; }
+      color: #fe7865;
+    direction: rtl;
+    }
   .single-info .info-content {
     padding-left: 20px; 
 
@@ -1762,7 +1801,6 @@ text-align: right;
 
 .modalDialog {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1776,7 +1814,7 @@ text-align: right;
 	pointer-events: none;
 }
 .modalDialog h2{
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-size:21px;
   color: #222;
 }
@@ -1791,6 +1829,8 @@ text-align: right;
 }
 
 .modalDialog > div {
+  padding: 50px !important;
+
   text-align: center;
   border-radius: 30px;
   width: 400px;
@@ -1828,4 +1868,7 @@ color: #EA4436;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+
 }
+
+
