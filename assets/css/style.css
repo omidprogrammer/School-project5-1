@@ -487,11 +487,11 @@ text-align: center;
   @media only screen and (min-width: 1400px) {
     .single-slider {
       padding: 0 100px; 
-    text-align: center;} }
+    text-align: right;} }
   @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .single-slider {
       padding: 0 30px;
-      text-align: center; } }
+      text-align: right; } }
   .single-slider .slider-bg {
     border-radius: 40px;
     background: linear-gradient(145deg, #e6e1dd, #ffffff);
