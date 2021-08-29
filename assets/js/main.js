@@ -250,4 +250,7 @@ $(function() {
 
 
 // rigster form
+    
+});
+
 
