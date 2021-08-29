@@ -245,17 +245,9 @@ $(function() {
     });
 
     SetRatingStar();
-    
-    
-
-
-
-
-
-
-
-
-
-
-    
+      
 });
+
+
+// rigster form
+
