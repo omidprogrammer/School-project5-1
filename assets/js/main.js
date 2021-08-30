@@ -245,6 +245,9 @@ $(function() {
     });
 
     SetRatingStar();
+
+
+    lightGallery(document.getElementById('lightgallery'));
       
 });
 
