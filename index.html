@@ -38,11 +38,12 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- light gallery -->
+
+    <!--====== light gallery ======-->
     <link rel="stylesheet" href="assets/css/lightgallery.min.css">
 </head>
 
-<body>
+<body class="home">
 
     <!--====== PRELOADER PART START ======-->
 
@@ -1019,36 +1020,46 @@
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-temp text-center mt-30">
+            <div class="demo-gallery">
+                <ul class="row justify-content-center" id="lightgallery">
+                    <li class="col-lg-4 col-md-7 col-sm-8 mt-5 mt-xl-0 text-center" data-responsive="assets/images/article2.jpg 375, assets/images/article2.jpg 480, assets/images/article2.jpg 800" data-src="assets/images/article2.jpg" data-sub-html="<h4>کپی با ذکر منبع بلامانع است.</h4><p> تصویر شماره 1  </p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
                         <div class="team-image">
-                            <img src="assets/images/article.png" alt="تابلو اعلانات">
+                            <a href="">
+                                <img src="assets/images/article2.jpg" alt="Team">
+                            </a>
                         </div>
-                    </div> <!-- single temp -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-temp text-center mt-30">
+                        <!-- <div class="team-content">
+                            <h5 class="holder-name"><a href="#">تایتل توضیحات</a></h5>
+                            <p class="text">توضیحات</p>
+                        </div> -->
+                    </li> <!-- single team -->
+
+                    <li class="col-lg-4 col-md-7 col-sm-8 mt-5 mt-xl-0 text-center" data-responsive="assets/images/article3.jpg 375, assets/images/article3.jpg 480, assets/images/article3.jpg 800" data-src="assets/images/article3.jpg" data-sub-html="<h4>کپی با ذکر منبع بلامانع است.</h4><p>تصویر شماره 2</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
                         <div class="team-image">
-                            <img src="assets/images/article2.jpg" alt="تابلو اعلانات">
+                            <a href="">
+                                <img src="assets/images/article3.jpg"alt="Team">
+                            </a>
                         </div>
-                    </div> <!-- single temp -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-temp text-center mt-30">
+                        <!-- <div class="team-content">
+                            <h5 class="holder-name"><a href="#">تایتل توضیحات</a></h5>
+                            <p class="text">توضیحات</p>
+                        </div> -->
+                    </li> <!-- single team -->
+
+                    <li class="col-lg-4 col-md-7 col-sm-8 mt-5 mt-xl-0 text-center" data-responsive="assets/images/article.png 375, assets/images/article.png 480, assets/images/article.png 800" data-src="assets/images/article.png" data-sub-html="<h4>کپی با ذکر منبع بلامانع است.</h4><p>تصویر شماره 3</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
                         <div class="team-image">
-                            <img src="assets/images/article3.jpg">
+                            <a href="">
+                                <img src="assets/images/article.png" alt="Team">
+                            </a>
                         </div>
-                    </div> <!-- single temp -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-temp text-center mt-30">
-                        <div class="team-image">
-                            <img src="assets/images/article.png">
-                        </div>
-                    </div> <!-- single temp -->
-                </div>
-            </div> <!-- row -->
+                        <!-- <div class="team-content">
+                            <h5 class="holder-name"><a href="#">تایتل توضیحات</a></h5>
+                            <p class="text">توضیحات</p>
+                        </div> -->
+                    </li> <!-- single team -->
+                </ul> <!-- row -->
+            </div> 
+                        
         </div> <!-- container -->
     </section>
 
@@ -1396,7 +1407,9 @@
 
     <!--====== BACK TO TOP PART ENDS ======-->
 
-<script src="assets/js/lightgallery.min.js"></script>
+    <!--====== lightgallery js ======-->
+    <script src="assets/js/lightgallery.min.js"></script>
+
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
