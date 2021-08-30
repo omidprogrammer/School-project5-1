@@ -252,8 +252,6 @@ $(function() {
 });
 
 
-// rigster form
-    
+// light Gallery
 
-
-
+lightGallery(document.getElementById('lightgallery'));
