@@ -41,6 +41,8 @@
 
     <!--====== light gallery ======-->
     <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body class="home">
@@ -1070,9 +1072,9 @@
     <section id="testimonial" class="testimonial-area pt-200">
         <div class="testimonial-bg bg_cover" style="background-image: url(assets/images/testimonial/ts-bg.gif)"></div>
         <div class="container">
-            <div class="row">
+            <div class="row mt-125">
                 <div class="col-lg-5 col-md-8">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content mb-165">
                         <div class="testimonial-active">
                             <div class="single-testimonial">
                                 <i class="lni-quotation"></i>
@@ -1127,7 +1129,7 @@
                                         تحصیلی جدید<br> 1400</a></h4>
                                 <span> 1400/06/02</span>
 
-                                <a href="#modal-1" class="modal-btn">ادامه مطلب</a>
+                                <a data-toggle="modal" data-target="#modal-1" href="#modal-1" class="modal-btn">ادامه مطلب</a>
                             </div>
 
                             <div class="meta d-flex justify-content-between align-items-center">
@@ -1158,7 +1160,7 @@
                             <div class="content">
                                 <h4 class="title"><a href="#">اعلام رتبه های برتر کنکور در دبیرستان مکتبخانه</a></h4>
                                 <span>1400/06/03</span>
-                                <a href="#modal-2" class="modal-btn">ادامه مطلب</a>
+                                <a data-toggle="modal" data-target="#modal-2" href="#modal-2" class="modal-btn">ادامه مطلب</a>
 
                             </div>
                             <div class="meta d-flex justify-content-between align-items-center">
@@ -1189,7 +1191,7 @@
                             <div class="content">
                                 <h4 class="title"><a href="#">افتخار آفرینان المپیاد کشوری سال 98-97</a></h4>
                                 <span>1400/06/05</span>
-                                <a href="#modal-3" class="modal-btn">ادامه مطلب</a>
+                                <a data-toggle="modal" data-target="#modal-3" href="#modal-3" class="modal-btn">ادامه مطلب</a>
 
 
                             </div>
@@ -1217,38 +1219,68 @@
     </section>
 
     <!--======  BLOG PART ENDS ======-->
-
-
-
-    <div id="modal-1" class="modalDialog">
-
-        <div>
-            <a href="#close" title="Close" class="close">x</a>
-            <h2>خبر شماره یک </h2>
+  
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">خبر شماره #1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
             <img src="assets/images/blog/b-1.jpg" alt="خبر 1">
             <p> مراحل پذیرش در دبیرستان مکتبخانه</p>
         </div>
-    </div>
-
-    <div id="modal-2" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">x</a>
-            <h2>خبر شماره دو </h2>
-            <p>رتبه های برتر کنکور سراسری سال 98-99</p>
-            <img src="assets/images/blog/b-2.jpg" alt="خبر 2">
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">بازگشت</button>
         </div>
-
+      </div>
     </div>
-
-    <div id="modal-3" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">x</a>
-            <h2>خبر شماره سه </h2>
+  </div>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">خبر شماره #2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>رتبه های برتر کنکور سراسری سال 98-99</p>
+                <img src="assets/images/blog/b-2.jpg" alt="خبر 2">
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">بازگشت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">خبر شماره #3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
             <p>قبولی های المپیاد دبیرستان مکتبخانه</p>
             <img src="assets/images/blog/b-3.png" alt="">
         </div>
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بازگشت</button>
+        </div>
+      </div>
     </div>
+  </div>
     <!--====== CONTACT PART START ======-->
 
     <section id="contact" class="contact-area pt-115">

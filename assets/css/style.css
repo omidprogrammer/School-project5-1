@@ -216,82 +216,17 @@ p {
         cursor:pointer;
       }
       
-      .modalDialog {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 300ms ease-in;
-        -moz-transition: opacity 300ms ease-in;
-        transition: opacity 300ms ease-in;
-        pointer-events: none;
-      }
-      .modalDialog h2{
-        margin-bottom: 40px;
-        font-size:21px;
-        color: #222;
-      }
-      .modalDialog p{
-        margin-top: 20px;
-        font-size:15px;
-        color: #010101;
-      }
-      .modalDialog:target {
-        opacity:1;
-        pointer-events: auto;
-      }
-      
-      .modalDialog > div {
-        padding: 50px !important;
-        text-align: center;
-        border-radius: 30px;
-        width: 700px;
-        position: relative;
-        margin: 10% auto;
-        background: rgba(254, 120, 101, 0.8);
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+
+      /* dillog */
+      .modal-body{
+        text-align: right !important;
       }
 
-      @media only screen and (max-width: 768px){
-        .modalDialog > div {
-          width: 100%;
-        }
+      .modal-title{
+        margin-left: 42% !important;
+        color: #fe7865;
       }
-      
-      .close {
-        padding: 0;
-        color:black;
-        line-height: 25px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 10px;
-        width: 24px;
-        text-decoration: none;
-        background:none;
-        font-weight: bold;
-      }
-      
-      .close:hover { 
-      color: #EA4436;
-      }
-      
-      .mapContainer iframe{
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        max-width: 100%;
-      
-      }
+
       
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .mapContainer iframe {
@@ -1298,6 +1233,22 @@ direction: rtl;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  position: relative;
+  top: 13rem;
+
+}
+
+@media screen and (min-width: 992px) {
+  .testimonial-content {
+    border-radius: 20px;
+    background-color: rgba(254, 120, 101, 0.9);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    right: -70% !important
+  }  
+
 }
 
 .single-testimonial {
